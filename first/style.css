@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(212, 208, 208)
+    background-color: rgb(212, 208, 208);
 }
 
 
@@ -13,7 +13,7 @@ body{
     color: white;
     border-radius: 50px;
     cursor: pointer;
-    transition: background 1s, transform 0.5s 1s;
+    transition: background 1s, transform 0.5s ;
 }
 
 .circle:hover{
@@ -24,12 +24,15 @@ body{
 
 .car{
     animation-name: drive;
-    animation-duration: 10s;
+    animation-duration: 5s;
     transform: scale(0.3);
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    /* animation-direction: ; */
 }
 
 @keyframes drive{
-    from{transform: scale(0.3) translateX(0);}
-    to{transform:scale(0.3) translateX(1500px);}
+    from{transform: scale(0.3) translateX(-2000px) ;}
+    to{transform:scale(0.3) translateX(4100px) ;}
 }
 
