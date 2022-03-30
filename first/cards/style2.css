@@ -10,10 +10,12 @@
 
 .list div.back {
   transform: rotateY(90deg);
+ 
 }
 
 .list div.front {
   position: absolute;
+  
 }
 
 .list li:hover div.front {
